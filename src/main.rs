@@ -16,7 +16,7 @@ fn main() {
         loop {
             match io::stdin()
                 .read_line(& mut guess) {
-                    Ok(guess) => guess,
+                    Ok(_) => {},
                     Err(_) => continue,
                 };
             break;
